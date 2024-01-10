@@ -1,0 +1,121 @@
+{
+    "app" : 
+    {
+        "apiVersion" : 
+        {
+            "compatible" : 8,
+            "compileSdkType" : "OpenHarmony",
+            "compileSdkVersion" : "3.1.13.5",
+            "releaseType" : "Release",
+            "target" : 8
+        },
+        "bundleName" : "ohos.samples.chat",
+        "vendor" : "samples",
+        "version" : 
+        {
+            "code" : 1000000,
+            "name" : "1.0.0"
+        }
+    },
+    "deviceConfig" : 
+    {
+        "default" : 
+        {
+            "debug" : true
+        }
+    },
+    "module" : 
+    {
+        "abilities" : 
+        [
+            {
+                "description" : "$string:MainAbility_desc",
+                "descriptionId" : 16777216,
+                "formsEnabled" : false,
+                "icon" : "$media:chat",
+                "iconId" : 16777226,
+                "label" : "$string:MainAbility_label",
+                "labelId" : 16777217,
+                "launchType" : "standard",
+                "name" : ".MainAbility",
+                "orientation" : "unspecified",
+                "skills" : 
+                [
+                    {
+                        "actions" : 
+                        [
+                            "action.system.home"
+                        ],
+                        "entities" : 
+                        [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "srcLanguage" : "ets",
+                "srcPath" : "MainAbility",
+                "type" : "page",
+                "visible" : true
+            }
+        ],
+        "deviceType" : 
+        [
+            "default",
+            "tablet"
+        ],
+        "distro" : 
+        {
+            "deliveryWithInstall" : true,
+            "installationFree" : false,
+            "moduleName" : "entry",
+            "moduleType" : "entry",
+            "virtualMachine" : "ark0.0.0.2"
+        },
+        "js" : 
+        [
+            {
+                "mode" : 
+                {
+                    "syntax" : "ets",
+                    "type" : "pageAbility"
+                },
+                "name" : ".MainAbility",
+                "pages" : 
+                [
+                    "pages/Index",
+                    "pages/AddFriendsPage",
+                    "pages/ChatDetailPage",
+                    "pages/ChatListPage",
+                    "pages/ChatNewsPage",
+                    "pages/DiscoverPage",
+                    "pages/CreateGroupChatPage",
+                    "pages/MsgBase",
+                    "pages/FriendsMomentsPage",
+                    "pages/FriendsPage",
+                    "pages/FullImagePage",
+                    "pages/SearchPage",
+                    "pages/Setting",
+                    "pages/SettingPage",
+                    "pages/SwitchControl",
+                    "pages/SwitchPage",
+                    "pages/UserInfo"
+                ],
+                "window" : 
+                {
+                    "autoDesignWidth" : false,
+                    "designWidth" : 720
+                }
+            }
+        ],
+        "mainAbility" : ".MainAbility",
+        "name" : ".entry",
+        "package" : "ohos.samples.chat",
+        "reqPermissions" : 
+        [
+            {
+                "name" : "ohos.permission.INTERNET"
+            }
+        ],
+        "srcPath" : ""
+    }
+}
